@@ -5,7 +5,7 @@
         <meta charset="Sum-Camp23">
         <meta name="description" content="1st Meeting for Sumer Camp 2023">
         <meta name="author" content="Antonio Peso Vilella">
-        <link rel="icon" href="/favicon.JPG">
+        <link rel="icon" href="/Media/favicon.JPG">
     </head>
     <body>
         <main>
@@ -49,7 +49,7 @@
             <h2>Dates (voting)</h2>
             <p>The final dates were propposed at last week's meeting by the president and vice president. After a quick reminder of the dates, all the members voted: <b>8 in favor</b> / <b>2 against</b>.
             <span><strong>Decision: <em>Approved</em></strong></span></p>
-            <img src="Dates.JPG" alt="Final Dates" width="1100" height="650">
+            <img src="/Media/Dates.JPG" alt="Final Dates" width="1100" height="650">
         </div>
 
         <br>
@@ -59,13 +59,13 @@
             <p>The accountant Jorge Garcia presents the budget for Summer Camp and explains in detail its content.</p>
             <p>After a quick round of questions the vote starts: <b>10 in favor</b> / <b>0 against</b>.
             <span><strong>Decision: <em>Approved</em></strong></span></p>
-            <img src="budget.png" alt="Budget" width="600" height="350">
+            <img src="/Media/budget.png" alt="Budget" width="600" height="350">
         </section>
 
         <section>
             <h2>Locations</h2>
             <p>The possible campsites were exposed and explained in detail. The decision is postponed until the next meeting on <i>October 13th</i></p>
-            <img src="Locations.JPG" alt="Possible locations" width="600" height="450">
+            <img src="/Media/Locations.JPG" alt="Possible locations" width="600" height="450">
             <details>
                 <summary>Campsites</summary>
                 <ul>
@@ -78,10 +78,79 @@
 
         <section>
             <h2>Questions</h2>
-            <p>Claudia Miralles asked about the transportation needs in order to rent a bus big enough to fit everyon, but the complete enrollment list is not complete.</p>
-        </section>
+            <p>Claudia Miralles asked about the transportation needs in order to rent a bus big enough to fit everyone, but the enrollment list is not complete.</p>
+        </section><br><br>
 
-        <hr>
+        <section>
+            <h2>Motivation for the Day</h2>
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+                <source src="/Media/Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="/Media/Audio.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+              </audio>
+        </section>
+        <hr><br>
+
+        <h2>Inscription form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal information:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="date">Date of Birth:</label>
+                <input type="date"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <laber for="sex">Sex:</laber><br><br>
+                <input type="radio" id="male" name="sex" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="sex" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="Other" name="sex" value="Other">
+                <label for="other">Other</label><br><br>
+            </fieldset><br><br>
+            
+            <label for="group">Choose your child's group from the list:</label>
+            <input list="groups" name="group" id="group">
+
+            <datalist id="groups">
+                <option value="Group 1">
+                <option value="Group 2">
+                <option value="Group 3">
+                <option value="Group 4">
+                <option value="Group 5">
+            </datalist><br><br>
+            
+            <label for="pay">Choose a payment method:</label>
+
+            <select name="pay" id="pay">
+                <option value="bank">Bank Transfer</option>
+                <option value="check">Check</option>
+                <option value="cash">Cash</option>
+            </select><br><br>
+
+            <label for="comments">Comments and Questions:</label><br>
+
+            <textarea id="comments" name="comments" rows="4" cols="254"></textarea><br><br>
+            <label for="Newsletter">Do you want to recieve our monthly Newsletter?</label>
+            <input type="checkbox"><br><br>
+
+            <button type="submit">Submit</button>
+            
+        </form><br>
+
+        <hr><br>
         
         <nav>
             <a href="/https://esplaisantmiquel.wordpress.com/">Esplai Sant Miquel</a>
