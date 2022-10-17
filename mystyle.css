@@ -1,0 +1,230 @@
+/*
+Changes if viewed with a screen in portrait mode
+*/
+@media screen and (orientation: portrait) {
+    div {
+      padding: 1rem 3rem;
+    }
+}
+
+
+/*
+Date style
+*/
+#date {
+    text-decoration: underline overline;
+    margin-left: 25vw;
+    display: inline-block;
+}
+
+
+/*
+General text
+*/
+* {
+    font-size: 0.5cm;
+    font-family: sans-serif;
+    max-width: 50cm;
+    min-width: 2cm;
+}
+
+p {
+    font-family: sans-serif;
+    margin-left: 1.3cm;
+    height: 1cm;
+    width: 80vw;
+}
+
+
+/*
+Important text highlight
+*/
+.highlight {
+    background-color: yellow;
+}
+
+
+/*
+Images styled when p is a general sibling
+*/
+p ~ img[src] {
+    margin-left: 2ex;
+    border: 5px solid #0b385f;
+    border-radius: 10px;
+    position: static;
+}
+
+
+/*
+Images styled when div is an adjacent sibling
+*/
+div + img[src] {
+    margin-left: 2ex;
+    border: 5px solid #44802c;
+    border-radius: 10px;
+    position: static;
+}
+
+
+/*
+Headings are structured as:
+    - text color and style
+    - margin
+    - display
+*/
+h1 {
+    color: rgb(0,0,256);
+    font-size: 3vw;
+
+    margin: 32vw;
+
+    display: inline;
+}
+
+header > h2 {
+    color: rgb(185, 23, 164);
+    font-size: 2.5vw;
+    text-decoration: underline;
+    
+    margin-left: 2ex;
+
+    display: inline;
+}
+
+section h2, div h2 {
+    color: rgb(0,0,256);
+    font-size: 2vw;
+    
+    margin-left: 2.5ex;
+
+    display: inline;
+}
+
+
+/*
+Next boxes are structured as:
+    - text and background
+    - margin
+    - border
+    - padding
+*/
+#page_description {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #567895;
+
+    margin: 20px 10px 20px 10px;
+
+    border: 5px solid #0b385f;
+    border-radius: 10px;
+
+    padding: 10px 20px 10px 20px;
+}
+
+#list {
+    color: #fff;
+    background-color: #567895;
+    
+
+    margin-top: em;
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 30cm;
+    
+    border-style: solid;
+    border-color: #0b385f;
+    border-width: 5px;
+    border-radius: 10px;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+
+
+/* 
+Official web page link (sticky)
+*/
+#official_page {
+    text-align: end;
+    position: sticky;
+    bottom: 10px;
+}
+
+
+/*
+Submit button
+*/
+.submitButton:hover {
+    background-color: #47a4f5;
+}
+
+.submitButton:active {
+    box-shadow: 2px 2px 5px blue;
+}
+
+
+/*
+Flexbox usage on Location div
+*/
+.LocationBox {
+    display: flex;
+    align-items: center;
+    margin-top: 1cm;
+}
+.location1 {
+    flex: 1;
+    display:grid;
+    margin: 1em;
+}
+.location2 {
+    flex: 2;
+    display: flex;
+    text-align: justify;
+    margin: 1em;
+}
+.location3 {
+    flex: 4;
+    margin: 1em;
+}
+.location4 {
+    flex: 3;
+    margin: 1em;
+}
+
+
+/*
+Grid usage on Motivation of the day div
+*/
+div.motivation {
+    display: grid;
+    grid-template-columns: 50px, 50px;
+    grid-template-rows: 40px 40px 300px;
+    grid-template-areas: 
+    "header header "
+    "main1 main2"
+    "footer1 footer2";
+}
+
+div.motivation1 {
+    grid-area: header;
+    justify-self: start;
+}
+div.motivation2 {
+    grid-area: main1;
+    justify-self: center;
+}
+div.motivation3 {
+    grid-area: footer1;
+    justify-self: center;
+}
+div.motivation4 {
+    grid-area: main2;
+    justify-self: center;
+}
+div.motivation5 {
+    grid-area: footer2;
+    justify-self: center;
+}
+
