@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            body { /* Background color (Internal CSS) */
+                background-color: ghostwhite;
+            }
+        </style>
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        
         <title>Summer Camp 23</title>
         <meta charset="utf-8">
         <meta name="description" content="1st Meeting for Sumer Camp 2023">
@@ -10,15 +21,15 @@
     <body>
         <main>
             <h1>Summer Camp 2023</h1>
-            <p>2nd meeting of the Scout group <b>Esplai Sant Miquel</b> on the Summer Camp 2023.</p>
+            <p id="page_description">2nd meeting of the Scout group <b>Esplai Sant Miquel</b> on the Summer Camp 2023.</p>
         </main>
         <header>
             <h2>Location Search</h2>
-            <h3>October 6th 2022</h3>
+            <h3 id="date">October 6th 2022</h3>
         </header>
         <section>
             <h2>Attendance</h2>
-            <ul>
+            <ul id="list">
                 <li>Toni Ginot <b>(president)</b></li>
                 <li>Jaume Navarro <b>(vice president)</b></li>
                 <li>Jorge Garcia <b>(accountant)</b></li>
@@ -30,12 +41,12 @@
                 <li>Miquel Figuls</li>
                 <li>Anna Torres</li>
             </ul>
-            <p>Total attendance: <b>10</b></p>
+            <p><span class="highlight"><strong>Total attendance: 10</strong></span></p>
         </section>
 
         <section>
             <h2>Agenda</h2>
-            <ol>
+            <ol id="list">
                 <li>Dates (voting)</li>
                 <li>Budget</li>
                 <li>Locations</li>
@@ -48,7 +59,7 @@
         <div>
             <h2>Dates (voting)</h2>
             <p>The final dates were propposed at last week's meeting by the president and vice president. After a quick reminder of the dates, all the members voted: <b>8 in favor</b> / <b>2 against</b>.
-            <span><strong>Decision: <em>Approved</em></strong></span></p>
+            <span class="highlight"><strong>Decision: <em>Approved</em></strong></span></p>
             <img src="Media/Dates.JPG" alt="Final Dates" width="1100" height="650">
         </div>
 
@@ -58,42 +69,47 @@
             <h2>Budget</h2>
             <p>The accountant Jorge Garcia presents the budget for Summer Camp and explains in detail its content.</p>
             <p>After a quick round of questions the vote starts: <b>10 in favor</b> / <b>0 against</b>.
-            <span><strong>Decision: <em>Approved</em></strong></span></p>
+            <span class="highlight"><strong>Decision: <em>Approved</em></strong></span></p>
             <img src="Media/budget.png" alt="Budget" width="600" height="350">
         </section>
 
-        <section>
-            <h2>Locations</h2>
-            <p>The possible campsites were exposed and explained in detail. The decision is postponed until the next meeting on <i>October 13th</i></p>
-            <img src="Media/Locations.JPG" alt="Possible locations" width="600" height="450">
-            <details>
+        <div class="LocationBox">
+            <div class="location1"><h2>Locations</h2></div>
+            <div class="location2"><p>The possible campsites were exposed and explained in detail. The decision is postponed until the next meeting on <i>October 13th</i></p></div>
+            <img class="location3" src="Media/Locations.JPG" alt="Possible locations" width="600" height="450">
+            <div class="location4"><details>
                 <summary>Campsites</summary>
-                <ul>
+                <ul id="list">
                     <li><a href="https://www.campaments.cat/terreny/bac-de-la-teuleria">Bac de la Teuleria</a></li>
                     <li><a href="https://www.campaments.cat/terreny/bac-de-can-batlle">Bac de Can Batlle</a></li>
                     <li><a href="https://www.campaments.cat/terreny/camp-de-les-mosqueres">Camp de les Mosqueres</a></li>
                 </ul>
-              </details>
-        </section>
+              </details></div>
+            </div>
 
         <section>
             <h2>Questions</h2>
             <p>Claudia Miralles asked about the transportation needs in order to rent a bus big enough to fit everyone, but the enrollment list is not complete.</p>
         </section><br><br>
-
-        <section>
-            <h2>Motivation for the Day</h2>
-            <h3>Video</h3>
-            <video width="320" height="240" controls>
+        
+        <div class="motivation">
+            <div class="motivation1"><h2>Motivation for the Day</h2></div>
+            <div class="motivation2"><h3 style="color:rgb(142, 16, 180)">Video</h3></div>
+            <div class="motivation3"><video width="320" height="240" controls>
                 <source src="Media/Video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video><br>
-            <h3>Audio</h3>
-            <audio controls>
+            </video></div>
+            
+            <br>
+            
+            <div class="motivation4"><h3 style="color:brown">Audio</h3>
+            <div class="motivation5"><audio controls>
                 <source src="Media/Audio.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
-              </audio>
-        </section>
+              </audio></div>
+            </div>
+        </div>
+
         <hr><br>
 
         <h2>Inscription form</h2>
@@ -146,15 +162,15 @@
             <label for="newsletter">Do you want to recieve our monthly Newsletter?</label>
             <input type="checkbox" id="newsletter" name="newsletter"><br><br>
 
-            <button type="submit">Submit</button>
+            <button class="submitButton" type="submit">Submit</button>
             
         </form><br>
 
         <hr><br>
         
-        <nav>
-            <a href="/https://esplaisantmiquel.wordpress.com/">Esplai Sant Miquel</a>
-        </nav>
+        <div id="official_page">
+            <nav><a href="/https://esplaisantmiquel.wordpress.com/">Esplai Sant Miquel</a></nav>
+        </div>
         <footer>
             <p>Author: Antonio Peso Vilella</p>
             <p><a href="mailto:apesovilella@ucsd.edu">apesovilella@ucsd.edu</a></p>
